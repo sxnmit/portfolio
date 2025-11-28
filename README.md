@@ -32,7 +32,6 @@ Deployed on **Vercel**.
 
 ## 📁 Project Structure
 
-/
 ├── app/
 ├── components/
 ├── public/
