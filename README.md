@@ -30,18 +30,6 @@ Deployed on **Vercel**.
 
 ---
 
-## 📁 Project Structure
-
-├── app/
-├── components/
-├── public/
-├── styles/
-├── README.md
-└── package.json
-
-
----
-
 ## 🔗 Live Site
 
 👉 **https://sanmitsingh.vercel.app**
