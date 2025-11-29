@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 export function HeroSection() {
   return (
-    <section className="relative px-4 pt-24 pb-16 lg:min-h-screen lg:flex lg:items-center lg:justify-center">
+    <section className="relative px-4 pt-32 md:pt-36 pb-16 lg:min-h-screen lg:flex lg:items-center lg:justify-center">
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Text content */}
         <motion.div
