@@ -13,13 +13,13 @@ export function AboutSection() {
       label: "2x Dean's List",
     },
     {
-      icon: TrendingUp,
-      value: '90%',
-      label: 'Efficiency Gains',
+      icon: Briefcase,
+      value: '3+',
+      label: 'Internships',
     },
     {
-      icon: Briefcase,
-      value: '20+',
+      icon: TrendingUp,
+      value: '10+',
       label: 'Projects Impacted',
     },
   ]

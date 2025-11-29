@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center px-4 pt-20">
+    <section className="relative px-4 pt-24 pb-16 lg:min-h-screen lg:flex lg:items-center lg:justify-center">
       <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-center">
         {/* Left side - Text content */}
         <motion.div
@@ -32,13 +32,13 @@ export function HeroSection() {
           </p>
 
           <div className="flex flex-wrap gap-4">
-            <Button size="lg" className="glow-purple group" >
-              <a href="#about" className="flex items-center">
-                Learn more
+            <Button size="lg" className="glow-purple group" asChild>
+              <a href="#experience" className="flex items-center">
+                View My Work
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>
-            <Button size="lg" variant="outline" className="glass">
+            <Button size="lg" variant="outline" className="glass" asChild>
               <a href="#contact">
                 Let&apos;s Connect
               </a>
@@ -47,7 +47,7 @@ export function HeroSection() {
 
           <div className="flex gap-4 pt-4">
             <a
-              href="mailto:sanmitsingh996@gmail.com"
+              href="mailto:sings246@mcmaster.ca"
               className="p-3 glass rounded-lg hover:glow-purple transition-all"
             >
               <Mail className="w-5 h-5" />
@@ -76,7 +76,7 @@ export function HeroSection() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="relative"
+          className="relative mt-12 lg:mt-0"
         >
           <div className="relative aspect-square max-w-lg mx-auto">
             {/* Floating tech icons */}
@@ -109,7 +109,6 @@ export function HeroSection() {
               <span className="text-3xl">🚀</span>
             </motion.div>
 
-            {/* Main illustration placeholder */}
             <div className="absolute inset-0 flex items-center justify-center">
               <Image
                 src="/workspace.jpg"
