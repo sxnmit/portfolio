@@ -14,13 +14,13 @@ export function AboutSection() {
     },
     {
       icon: Briefcase,
-      value: '3+',
+      value: '5',
       label: 'Internships',
     },
     {
       icon: TrendingUp,
       value: '10+',
-      label: 'Projects Impacted',
+      label: 'Tools in Production',
     },
   ]
 
@@ -71,21 +71,21 @@ export function AboutSection() {
           >
             <div className="prose prose-invert max-w-none">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I&apos;m a 3rd-year <span className="text-foreground font-semibold">Honours Computer Science</span> student
+                I&apos;m a <span className="text-foreground font-semibold">Honours Computer Science</span> co-op student
                 at McMaster University with a <span className="text-primary font-semibold">3.9 GPA</span>.
-                As a two-time Dean&apos;s List recipient, I combine strong academic excellence with practical industry experience.
+                As a two-time Dean&apos;s List recipient, I bring strong academic excellence combined with hands-on experience across multiple companies and roles.
               </p>
               <br></br>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                Currently working as a <span className="text-foreground font-semibold">Technical Specialist and Business Analyst</span> at
-                Tetra Tech, I&apos;ve delivered automation solutions that improved efficiency by up to 90% and built
-                data integration systems impacting 20+ active client projects.
+                I&apos;ve contributed to diverse teams across <span className="text-foreground font-semibold">Scotiabank</span>, <span className="text-foreground font-semibold">Tetra Tech</span>, and <span className="text-foreground font-semibold">InsightAI</span>,
+                delivering automation solutions that improved efficiency by up to 90%, building scalable web applications, and engineering AI-powered pipelines.
+                I balance technical depth with business acumen, transitioning between software engineering, product management, and business analysis roles.
               </p>
               <br></br>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I&apos;m skilled in <span className="text-accent font-semibold">full-stack development</span>, with expertise in
-                C#, TypeScript, Python, React, ASP.NET, and cloud-based solutions. I thrive at the intersection of
-                technical execution and business strategy, building solutions that deliver measurable impact.
+                I&apos;m proficient in <span className="text-primary font-semibold">full-stack development</span>, with expertise in
+                Next.js, React, TypeScript, C#, Python, and cloud technologies. Beyond traditional roles, I&apos;ve built personal projects including
+                a Chrome extension for university navigation, a pool hall management SaaS, and an automated news digest agent—each solving real problems with modern tech stacks.
               </p>
             </div>
 

@@ -22,7 +22,7 @@ export function HeroSection() {
               <span className="gradient-text">Sanmit Singh</span>
             </h1>
             <h2 className="text-2xl md:text-3xl text-muted-foreground text-balance leading-tight">
-              Software Developer & Technical Specialist
+              Software Engineer and Product Manager
             </h2>
           </div>
 
@@ -34,7 +34,7 @@ export function HeroSection() {
           <div className="flex flex-wrap gap-4">
             <Button size="lg" className="glow-purple group" asChild>
               <a href="#experience" className="flex items-center">
-                View My Work
+                View My Experiences
                 <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </Button>

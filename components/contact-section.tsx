@@ -19,7 +19,7 @@ export function ContactSection() {
             Let&apos;s Build <span className="gradient-text">Something Together</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-balance">
-            Open to 4-8 month co-ops starting Summer 2026
+            Open to 4-month co-ops starting Fall 2026
           </p>
         </motion.div>
 
@@ -34,9 +34,9 @@ export function ContactSection() {
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I&apos;m currently seeking 4-8 month co-op opportunities starting Summer 2026 where I can apply my
+                I&apos;m currently seeking 4 month co-op opportunities starting Fall 2026 where I can apply my
                 technical expertise in full-stack development, data integration, and automation
-                to create meaningful impact. Let&apos;s discuss how I can contribute to your team.
+                to create meaningful impact.
               </p>
             </div>
 

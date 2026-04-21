@@ -10,35 +10,41 @@ import { Github } from 'lucide-react'
 export function ProjectsSection() {
   const projects = [
     {
-      title: 'Meeting Intelligence SaaS',
-      period: 'Nov 2025 – Present',
-      description:
-        'Engineering a multi-tenant SaaS platform with a C# .NET backend and Next.js frontend, enabling seamless integration with Zoom, Microsoft Teams, and Google Meet to ingest and normalize meeting recordings and transcripts.',
-      features: [
-        'Multi-tenant architecture with secure data isolation',
-        'AI-powered NLP pipeline for extracting action items and decisions',
-        'Automatic syncing with Jira and email for task tracking',
-        'Real-time transcript processing and analysis',
+      title: 'Chalk',
+      period: 'In Development',
+      bullets: [
+        'A SaaS solution for pool hall management, featuring secure user authentication, real-time table tracking, and revenue reporting',
+        'Architected a scalable web application using Next.js, TypeScript, Tailwind CSS, and Supabase with a tablet-first UI optimized for in-venue use',
+        'Laying the foundation for a future global pool platform with a full POS system coming soon',
       ],
-      technologies: ['C#', '.NET', 'Next.js', 'NLP', 'Jira API', 'TypeScript'],
-      image: null,
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase'],
+      image: '/projImage3.png',
       githubUrl: null,
     },
     {
-      title: 'Full-Stack Library Management App',
-      period: 'Jan 2024 – Apr 2024',
-      description:
-        'Organized and managed up to 100 books from a personal library using a comprehensive full-stack application developed using the MERN stack (MongoDB, Express.js, React.js, Node.js) and MySQL.',
-      features: [
-        'RESTful API architecture for scalable operations',
-        'JWT authentication and email verification',
-        'Password encryption for secure user management',
-        'Responsive UI with real-time updates',
+      title: 'Signal',
+      period: 'April 2026',
+      bullets: [
+        'Automated news digest agent that aggregates tech and world news from NewsAPI and RSS feeds',
+        'Summarizes articles using Groq\'s Llama LLM with AI-powered content filtering and intelligent deduplication',
+        'Engineered full pipeline with custom scraping and professional email rendering via GitHub Actions CI/CD workflows',
       ],
-      technologies: ['MongoDB', 'Express.js', 'React', 'Node.js', 'MySQL', 'JWT'],
+      technologies: ['NewsAPI', 'RSS', 'Groq', 'Llama', 'SQLite', 'GitHub Actions', 'Gmail', 'Python'],
       image: '/projImage.png',
-      githubUrl: null, // Add your GitHub URL here if you have one
+      githubUrl: null,
     },
+    {
+      title: 'Macify',
+      period: 'January - February 2026',
+      bullets: [
+        'Context-aware Chrome extension that improves navigation and clarity across McMaster systems (Mosaic & OSCARplus)',
+        'Features cross-site shortcuts, assisted navigation, and in-page guidance',
+      ],
+      technologies: ['Chrome Extension', 'JavaScript', 'React'],
+      image: '/projImage2.png',
+      githubUrl: null,
+    },
+
   ]
 
   return (
@@ -71,16 +77,16 @@ export function ProjectsSection() {
               <Card className="glass border-primary/20 overflow-hidden hover:glow-purple transition-all">
                 <div className="grid md:grid-cols-2 gap-8">
                   {project.image ? (
-                    <div className="relative aspect-video md:aspect-auto overflow-hidden bg-muted/20">
+                    <div className="relative aspect-square overflow-hidden bg-muted/20 flex items-center justify-center">
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-cover"
+                        className="object-contain p-4"
                         unoptimized
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent pointer-events-none" />
                     </div>
                   ) : (
                     <div className="relative aspect-video md:aspect-auto overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center">
@@ -98,18 +104,16 @@ export function ProjectsSection() {
                         <p className="text-sm text-muted-foreground">{project.period}</p>
                       </div>
 
-                      <p className="text-muted-foreground leading-relaxed">{project.description}</p>
-
-                      <div className="space-y-2">
-                        {project.features.map((feature, i) => (
-                          <div key={i} className="flex gap-2 text-sm text-muted-foreground">
+                      <div className="space-y-3">
+                        {project.bullets.map((bullet, i) => (
+                          <div key={i} className="flex gap-2 text-base text-muted-foreground leading-relaxed">
                             <span className="text-primary">▹</span>
-                            <span>{feature}</span>
+                            <span>{bullet}</span>
                           </div>
                         ))}
                       </div>
 
-                      <div className="flex flex-wrap gap-2 pt-2">
+                      <div className="flex flex-wrap gap-2 pt-4">
                         {project.technologies.map((tech, i) => (
                           <Badge key={i} variant="outline" className="glass border-primary/30">
                             {tech}

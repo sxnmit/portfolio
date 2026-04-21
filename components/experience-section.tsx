@@ -9,7 +9,17 @@ export function ExperienceSection() {
   const experiences = [
     {
       company: 'Scotiabank',
-      role: 'Incoming Product Manager Intern',
+      role: 'Software Engineer Intern',
+      location: 'Toronto, ON',
+      period: 'May 2026 – Sep 2026',
+      description: [
+      ],
+      technologies: ['Python', 'Node.js', 'React.js', 'JavaScript', 'SQL', 'PyTorch', 'REST API Development', 'Agile Methodologies'],
+      color: 'accent',
+    },
+    {
+      company: 'Scotiabank',
+      role: 'Product Manager Intern',
       location: 'Toronto, ON',
       period: 'Jan 2026 – Apr 2026',
       description: [
@@ -22,14 +32,25 @@ export function ExperienceSection() {
     },
     {
       company: 'Tetra Tech',
-      role: 'Technical Specialist and Business Analyst Intern',
+      role: 'Business Analyst Intern',
       location: 'Pickering, ON',
-      period: 'May 2025 – Present',
+      period: 'Sep 2025 – Dec 2025',
+      description: [
+        'Collaborating cross-functionally with engineers, project managers, and stakeholders to gather requirements and translate business needs into technical deliverables',
+        'Designed process workflows and reporting structures that improved clarity, traceability, and stakeholder alignment, reducing communication gaps by 20% across teams',
+      ],
+      technologies: ['Requirements Gathering', 'Process Mapping', 'Business Analysis', 'Stakeholder Communication', 'Data Analysis', 'Documentation'],
+      color: 'primary',
+    },
+    {
+      company: 'Tetra Tech',
+      role: 'Software Engineer Intern',
+      location: 'Pickering, ON',
+      period: 'May 2025 – Aug 2025',
       description: [
         'Developed an end-to-end Excel automation full-stack web application using ReactJS and C#, enabling teams to drag-and-drop inputs and automatically generate client-ready deliverables, streamlining tasks by 90%',
         'Built and documented 5+ reusable React components using Storybook, improving UI development efficiency by over 25% and cutting new developer onboarding time by 2+ hours per project',
         'Built an API integration application to retrieve 10,000+ client feedback comments from Autodesk Construction Cloud and developed a PowerBI dashboard with scheduled refreshes',
-        'Collaborating cross-functionally with engineers, project managers, and stakeholders to gather requirements and translate business needs into technical deliverables',
       ],
       technologies: ['React', 'C#', '.NET', 'PowerBI', 'Storybook', 'TypeScript'],
       color: 'primary',
@@ -97,14 +118,16 @@ export function ExperienceSection() {
                   </div>
                 </div>
 
-                <ul className="space-y-3 mb-6">
-                  {exp.description.map((item, i) => (
-                    <li key={i} className="flex gap-3 text-muted-foreground leading-relaxed">
-                      <span className="text-primary mt-1">▹</span>
-                      <span>{item}</span>
-                    </li>
-                  ))}
-                </ul>
+                {exp.description.length > 0 && (
+                  <ul className="space-y-3 mb-6">
+                    {exp.description.map((item, i) => (
+                      <li key={i} className="flex gap-3 text-muted-foreground leading-relaxed">
+                        <span className="text-primary mt-1">▹</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
 
                 <div className="flex flex-wrap gap-2">
                   {exp.technologies.map((tech, i) => (
