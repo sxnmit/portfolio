@@ -13,8 +13,12 @@ export function ExperienceSection() {
       location: 'Toronto, ON',
       period: 'May 2026 – Sep 2026',
       description: [
+        'Building an elevated onboarding experience for Scotiabank\'s iTrade platform as the only intern staffed on this high-priority initiative',
+        'Redesigning flows for a mobile-first experience and cutting completion time by an estimated 30% for a user base in the millions',
+        'Led a 6-person intern team building agentic workflows and RAG pipelines with LangGraph to streamline architecture workflows for internal engineering teams using extreme programming (XP) frameworks',
+        'Developed a custom AI-powered development agent that orchestrates seamless workflows across multiple interconnected repositories, enabling engineers to rapidly build and ship scalable, production-ready applications',
       ],
-      technologies: ['Python', 'Node.js', 'React.js', 'JavaScript', 'SQL', 'PyTorch', 'REST API Development', 'Agile Methodologies'],
+      technologies: ['TypeScript', 'Python', 'SQL', 'Node.js', 'React.js', 'LangGraph', 'LangChain', 'Docker', 'Git', 'REST APIs', 'Agile'],
       color: 'accent',
     },
     {
