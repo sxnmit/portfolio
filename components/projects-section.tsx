@@ -33,11 +33,11 @@ export function ProjectsSection() {
       githubUrl: null,
     },
     {
-      title: 'Macify – Job Search Platform',
+      title: 'Macify',
       period: 'Jan 2026 – Present',
       bullets: [
-        'Building a context-aware Chrome extension providing fast access and guided navigation across McMaster systems (Mosaic & OSCARplus)',
-        'Features cross-site shortcuts, assisted navigation, and in-page guidance',
+        'Building a context-aware Chrome extension that delivers fast, guided navigation across McMaster\'s core systems (Mosaic & OSCARplus)',
+        'Designed cross-site shortcuts and in-page guidance to cut down navigation friction on legacy, state-driven university platforms',
       ],
       technologies: ['Chrome Extension', 'JavaScript', 'React'],
       image: '/projImage2.png',
