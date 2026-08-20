@@ -11,11 +11,10 @@ export function ProjectsSection() {
   const projects = [
     {
       title: 'Chalk',
-      period: 'In Development',
+      period: 'Apr 2026 – Present',
       bullets: [
-        'A SaaS solution for pool hall management, featuring secure user authentication, real-time table tracking, and revenue reporting',
-        'Architected a scalable web application using Next.js, TypeScript, Tailwind CSS, and Supabase with a tablet-first UI optimized for in-venue use',
-        'Laying the foundation for a future global pool platform with a full POS system coming soon',
+        'Building a multi-tenant B2B SaaS from scratch using Next.js, TypeScript, Tailwind CSS, and Supabase Postgres, shipping a working product to a real pilot customer in under a week',
+        'Designed real-time table session tracking (start/stop, live timers, auto revenue calculation) optimized for tablet-first in-venue use; built an owner-facing analytics dashboard with peak-hour analysis and rate-tier breakdowns',
       ],
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase'],
       image: '/projImage3.png',
@@ -23,21 +22,19 @@ export function ProjectsSection() {
     },
     {
       title: 'Signal',
-      period: 'April 2026',
+      period: 'March 2026',
       bullets: [
-        'Automated news digest agent that aggregates tech and world news from NewsAPI and RSS feeds',
-        'Summarizes articles using Groq\'s Llama LLM with AI-powered content filtering and intelligent deduplication',
-        'Engineered full pipeline with custom scraping and professional email rendering via GitHub Actions CI/CD workflows',
+        'Built a background Python agent that scrapes news from NewsAPI, RSS feeds, and the Claude API\'s web search tool, delivering a categorized HTML email digest on a configurable schedule',
       ],
-      technologies: ['NewsAPI', 'RSS', 'Groq', 'Llama', 'SQLite', 'GitHub Actions', 'Gmail', 'Python'],
+      technologies: ['NewsAPI', 'RSS', 'Claude API', 'Python'],
       image: '/projImage.png',
       githubUrl: null,
     },
     {
-      title: 'Macify',
-      period: 'January - February 2026',
+      title: 'Macify – Job Search Platform',
+      period: 'Jan 2026 – Present',
       bullets: [
-        'Context-aware Chrome extension that improves navigation and clarity across McMaster systems (Mosaic & OSCARplus)',
+        'Building a context-aware Chrome extension providing fast access and guided navigation across McMaster systems (Mosaic & OSCARplus)',
         'Features cross-site shortcuts, assisted navigation, and in-page guidance',
       ],
       technologies: ['Chrome Extension', 'JavaScript', 'React'],

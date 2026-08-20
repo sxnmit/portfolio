@@ -8,7 +8,7 @@ export function SkillsSection() {
   const skillCategories = [
     {
       title: 'Languages',
-      skills: ['Java', 'Python', 'C#', 'C', 'C++', 'JavaScript', 'TypeScript', 'CSS', 'Elm', 'Haskell'],
+      skills: ['Java', 'Python', 'C#', 'C', 'JavaScript', 'TypeScript', 'SQL', 'CSS'],
     },
     {
       title: 'Frameworks & Libraries',
@@ -19,6 +19,8 @@ export function SkillsSection() {
         'Next.js',
         'Angular',
         'Django',
+        'Spring Boot',
+        'Flutter',
         'Flask',
         'TailwindCSS',
         'Storybook',
@@ -26,11 +28,11 @@ export function SkillsSection() {
     },
     {
       title: 'Databases',
-      skills: ['PostgreSQL', 'MongoDB', 'Microsoft SQL Server', 'MySQL'],
+      skills: ['PostgreSQL', 'MongoDB', 'MySQL'],
     },
     {
       title: 'Tools & Technologies',
-      skills: ['Git', 'GitHub', 'Bitbucket', 'Postman', 'Jira', 'Confluence', 'Visual Studio', 'Copilot', 'Cursor', 'Claude Code', 'PowerBI', 'Adobe Analaytics', 'Microsoft 365'],
+      skills: ['Git', 'GitHub', 'Bitbucket', 'Postman', 'Jira', 'Confluence', 'Visual Studio', 'Copilot', 'Cursor', 'Claude Code', 'Conductor', 'Docker', 'LangChain', 'LangGraph', 'PowerBI', 'Adobe Analaytics', 'MS Office'],
     },
   ]
 
