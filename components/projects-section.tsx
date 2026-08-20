@@ -42,6 +42,7 @@ export function ProjectsSection() {
       technologies: ['Chrome Extension', 'JavaScript', 'React'],
       image: '/projImage2.png',
       imageFit: 'cover',
+      imagePosition: 'object-[center_25%]',
       githubUrl: null,
     },
 
@@ -85,7 +86,7 @@ export function ProjectsSection() {
                         sizes="(max-width: 768px) 100vw, 50vw"
                         className={
                           project.imageFit === 'cover'
-                            ? 'object-cover object-top'
+                            ? `object-cover ${project.imagePosition ?? 'object-top'}`
                             : 'object-contain p-4'
                         }
                         unoptimized
