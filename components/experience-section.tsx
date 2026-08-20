@@ -13,8 +13,7 @@ export function ExperienceSection() {
       location: 'Toronto, ON',
       period: 'May 2026 – Sep 2026',
       description: [
-        'Building an elevated onboarding experience for a client-facing platform as the only intern staffed on this high-priority initiative',
-        'Redesigning flows for a mobile-first experience, cutting completion time by an estimated 30% for a user base in the millions',
+        'Building an elevated onboarding experience for a client-facing platform with a user base in the millions as the only intern staffed on this high-priority initiative',
         'Led a 6-person intern team building agentic workflows and RAG pipelines with LangGraph to streamline architecture workflows for internal engineering teams using extreme programming (XP) frameworks',
       ],
       technologies: ['TypeScript', 'Python', 'SQL', 'Node.js', 'React.js', 'LangGraph', 'LangChain', 'Bitbucket', 'Docker', 'Git', 'REST API Development', 'Agile Methodologies'],
