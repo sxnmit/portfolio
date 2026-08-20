@@ -18,6 +18,7 @@ export function ProjectsSection() {
       ],
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase'],
       image: '/projImage3.png',
+      imageFit: 'contain',
       githubUrl: null,
     },
     {
@@ -28,6 +29,7 @@ export function ProjectsSection() {
       ],
       technologies: ['NewsAPI', 'RSS', 'Claude API', 'Python'],
       image: '/projImage.png',
+      imageFit: 'cover',
       githubUrl: null,
     },
     {
@@ -39,6 +41,7 @@ export function ProjectsSection() {
       ],
       technologies: ['Chrome Extension', 'JavaScript', 'React'],
       image: '/projImage2.png',
+      imageFit: 'cover',
       githubUrl: null,
     },
 
@@ -80,7 +83,11 @@ export function ProjectsSection() {
                         alt={project.title}
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-contain p-4"
+                        className={
+                          project.imageFit === 'cover'
+                            ? 'object-cover object-top'
+                            : 'object-contain p-4'
+                        }
                         unoptimized
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent pointer-events-none" />
