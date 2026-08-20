@@ -62,7 +62,7 @@ export function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -72,9 +72,9 @@ export function ProjectsSection() {
               viewport={{ once: true }}
             >
               <Card className="glass border-primary/20 overflow-hidden hover:glow-purple transition-all">
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-6 md:items-center">
                   {project.image ? (
-                    <div className="relative aspect-square overflow-hidden bg-muted/20 flex items-center justify-center">
+                    <div className="relative aspect-video overflow-hidden bg-muted/20 flex items-center justify-center">
                       <Image
                         src={project.image}
                         alt={project.title}
@@ -86,7 +86,7 @@ export function ProjectsSection() {
                       <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent pointer-events-none" />
                     </div>
                   ) : (
-                    <div className="relative aspect-video md:aspect-auto overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center">
+                    <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center">
                       <div className="text-center p-8">
                         <div className="text-4xl mb-4">💻</div>
                         <p className="text-muted-foreground text-sm">Project in progress</p>
@@ -94,7 +94,7 @@ export function ProjectsSection() {
                     </div>
                   )}
 
-                  <div className="p-8 flex flex-col justify-between">
+                  <div className="p-6 md:p-8 flex flex-col justify-center">
                     <div className="space-y-4">
                       <div>
                         <h3 className="text-2xl font-bold mb-2">{project.title}</h3>

@@ -53,7 +53,7 @@ export function AboutSection() {
             <div className="aspect-square max-w-md mx-auto relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl" />
               <Image
-                src="/my-hero-image.jpg"
+                src="/my-hero-image.png"
                 alt="Sanmit Singh"
                 fill
                 sizes="(max-width: 768px) 100vw, 400px"
