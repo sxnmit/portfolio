@@ -11,37 +11,38 @@ export function ProjectsSection() {
   const projects = [
     {
       title: 'Chalk',
-      period: 'In Development',
+      period: 'Apr 2026 – Present',
       bullets: [
-        'A SaaS solution for pool hall management, featuring secure user authentication, real-time table tracking, and revenue reporting',
-        'Architected a scalable web application using Next.js, TypeScript, Tailwind CSS, and Supabase with a tablet-first UI optimized for in-venue use',
-        'Laying the foundation for a future global pool platform with a full POS system coming soon',
+        'Building a multi-tenant B2B SaaS from scratch using Next.js, TypeScript, Tailwind CSS, and Supabase Postgres, shipping a working product to a real pilot customer in under a week',
+        'Designed real-time table session tracking (start/stop, live timers, auto revenue calculation) optimized for tablet-first in-venue use; built an owner-facing analytics dashboard with peak-hour analysis and rate-tier breakdowns',
       ],
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase'],
       image: '/projImage3.png',
+      imageFit: 'contain',
       githubUrl: null,
     },
     {
       title: 'Signal',
-      period: 'April 2026',
+      period: 'March 2026',
       bullets: [
-        'Automated news digest agent that aggregates tech and world news from NewsAPI and RSS feeds',
-        'Summarizes articles using Groq\'s Llama LLM with AI-powered content filtering and intelligent deduplication',
-        'Engineered full pipeline with custom scraping and professional email rendering via GitHub Actions CI/CD workflows',
+        'Built a background Python agent that scrapes news from NewsAPI, RSS feeds, and the Claude API\'s web search tool, delivering a categorized HTML email digest on a configurable schedule',
       ],
-      technologies: ['NewsAPI', 'RSS', 'Groq', 'Llama', 'SQLite', 'GitHub Actions', 'Gmail', 'Python'],
+      technologies: ['NewsAPI', 'RSS', 'Claude API', 'Python'],
       image: '/projImage.png',
+      imageFit: 'cover',
       githubUrl: null,
     },
     {
       title: 'Macify',
-      period: 'January - February 2026',
+      period: 'Jan 2026 – Present',
       bullets: [
-        'Context-aware Chrome extension that improves navigation and clarity across McMaster systems (Mosaic & OSCARplus)',
-        'Features cross-site shortcuts, assisted navigation, and in-page guidance',
+        'Building a context-aware Chrome extension that delivers fast, guided navigation across McMaster\'s core systems (Mosaic & OSCARplus)',
+        'Designed cross-site shortcuts and in-page guidance to cut down navigation friction on legacy, state-driven university platforms',
       ],
       technologies: ['Chrome Extension', 'JavaScript', 'React'],
       image: '/projImage2.png',
+      imageFit: 'cover',
+      imagePosition: 'object-[center_25%]',
       githubUrl: null,
     },
 
@@ -65,7 +66,7 @@ export function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -75,21 +76,25 @@ export function ProjectsSection() {
               viewport={{ once: true }}
             >
               <Card className="glass border-primary/20 overflow-hidden hover:glow-purple transition-all">
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-6 md:items-center">
                   {project.image ? (
-                    <div className="relative aspect-square overflow-hidden bg-muted/20 flex items-center justify-center">
+                    <div className="relative aspect-video overflow-hidden bg-muted/20 flex items-center justify-center">
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-contain p-4"
+                        className={
+                          project.imageFit === 'cover'
+                            ? `object-cover ${project.imagePosition ?? 'object-top'}`
+                            : 'object-contain p-4'
+                        }
                         unoptimized
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent pointer-events-none" />
                     </div>
                   ) : (
-                    <div className="relative aspect-video md:aspect-auto overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center">
+                    <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center">
                       <div className="text-center p-8">
                         <div className="text-4xl mb-4">💻</div>
                         <p className="text-muted-foreground text-sm">Project in progress</p>
@@ -97,7 +102,7 @@ export function ProjectsSection() {
                     </div>
                   )}
 
-                  <div className="p-8 flex flex-col justify-between">
+                  <div className="p-6 md:p-8 flex flex-col justify-center">
                     <div className="space-y-4">
                       <div>
                         <h3 className="text-2xl font-bold mb-2">{project.title}</h3>

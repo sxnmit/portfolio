@@ -27,7 +27,7 @@ export function HeroSection() {
           </div>
 
           <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl text-pretty">
-            3rd-year Computer Science student at McMaster University with hands-on industry
+            4th-year Computer Science student at McMaster University with hands-on industry
             experience in automation, data workflows, full-stack development, and AI-powered systems.
           </p>
 

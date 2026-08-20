@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Sanmit Singh\'s Portfolio',
-  description: '3rd-year Computer Science student at McMaster University with hands-on industry experience in automation, data workflows, full-stack development, and AI-powered systems.',
+  description: '4th-year Computer Science student at McMaster University with hands-on industry experience in automation, data workflows, full-stack development, and AI-powered systems.',
   generator: 'v0.app',
   icons: {
     icon: [
