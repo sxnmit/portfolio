@@ -28,7 +28,7 @@ export function ExperienceSection() {
         'Built an elevated onboarding experience for a client-facing platform with a user base in the millions, as the only intern staffed on this high-priority initiative',
         'Led a 6-person intern team building agentic workflows and RAG pipelines with LangGraph to streamline architecture workflows for internal engineering teams, using extreme programming (XP) frameworks',
       ],
-      technologies: ['TypeScript', 'Python', 'SQL', 'Node.js', 'React.js', 'LangGraph', 'LangChain', 'Docker', 'REST API Development', 'Agile Methodologies'],
+      technologies: ['TypeScript', 'Python', 'SQL', 'Node.js', 'React.js', 'LangGraph', 'LangChain', 'Docker', 'Git', 'Bitbucket', 'REST API Development', 'Agile Methodologies'],
       color: 'accent',
     },
     {
@@ -51,10 +51,10 @@ export function ExperienceSection() {
       description: [
         'Developed an end-to-end Excel automation full-stack web application using ReactJS and C#, enabling teams to drag-and-drop inputs and automatically generate client-ready deliverables, streamlining tasks by 90%',
         'Built and documented 5+ reusable React components using Storybook, improving UI development efficiency by over 25% and cutting new developer onboarding time by 2+ hours per project',
-        'Built an API integration application to retrieve 10,000+ client feedback comments from Autodesk Construction Cloud and developed a PowerBI dashboard with scheduled refreshes',
+        'Built an API integration application to retrieve 10,000+ client feedback comments from Autodesk Construction Cloud and developed a PowerBI dashboard with scheduled refreshes, enhancing real-time visibility across 20+ active projects',
         'Collaborated cross-functionally with engineers, project managers, and stakeholders to gather requirements and translate business needs into technical deliverables',
       ],
-      technologies: ['JavaScript', 'TypeScript', 'C#', 'Python', 'SQL', 'Node.js', 'React.js', 'ASP.NET', 'PowerBI', 'Storybook', 'Automated Testing'],
+      technologies: ['JavaScript', 'TypeScript', 'C#', 'Python', 'SQL', 'Node.js', 'React.js', 'ASP.NET', 'PowerBI', 'Storybook', 'Automated Testing', 'REST APIs', 'System Design'],
       color: 'primary',
     },
     {

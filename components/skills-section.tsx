@@ -36,7 +36,7 @@ export function SkillsSection() {
     },
     {
       title: 'Tools & Technologies',
-      skills: ['Git', 'GitHub', 'Bitbucket', 'Docker', 'Postman', 'Jira', 'Confluence', 'Visual Studio', 'Cursor', 'Claude Code', 'Conductor', 'PowerBI', 'Microsoft 365'],
+      skills: ['Git', 'GitHub', 'Bitbucket', 'Docker', 'Postman', 'Jira', 'Confluence', 'Visual Studio', 'Cursor', 'Claude Code', 'Conductor', 'PowerBI', 'MS Office'],
     },
   ]
 

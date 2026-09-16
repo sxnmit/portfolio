@@ -32,6 +32,7 @@ export function ProjectsSection() {
       ],
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Multi-Tenant SaaS'],
       image: '/projImage3.png',
+      imageFit: 'contain',
       githubUrl: null,
     },
     {
@@ -44,6 +45,7 @@ export function ProjectsSection() {
       ],
       technologies: ['Python', 'Claude API', 'NewsAPI', 'RSS', 'Automation'],
       image: '/projImage.png',
+      imageFit: 'cover',
       githubUrl: null,
     },
     {
@@ -51,11 +53,13 @@ export function ProjectsSection() {
       subtitle: 'McMaster Navigation Extension',
       period: 'January 2026',
       bullets: [
-        'Building a context-aware Chrome extension providing fast access and guided navigation across McMaster systems (Mosaic and OSCARplus)',
-        'Features cross-site shortcuts, assisted navigation, and in-page guidance',
+        'Building a context-aware Chrome extension that delivers fast, guided navigation across McMaster\'s core systems (Mosaic & OSCARplus)',
+        'Designed cross-site shortcuts and in-page guidance to cut down navigation friction on legacy, state-driven university platforms',
       ],
       technologies: ['Chrome Extension', 'JavaScript', 'React'],
       image: '/projImage2.png',
+      imageFit: 'cover',
+      imagePosition: 'object-[center_25%]',
       githubUrl: null,
     },
   ]
@@ -78,7 +82,7 @@ export function ProjectsSection() {
           </p>
         </motion.div>
 
-        <div className="max-w-6xl mx-auto space-y-12">
+        <div className="max-w-6xl mx-auto space-y-8">
           {projects.map((project, index) => (
             <motion.div
               key={index}
@@ -88,20 +92,24 @@ export function ProjectsSection() {
               viewport={{ once: true }}
             >
               <Card className="glass border-primary/20 overflow-hidden hover:glow-purple transition-all">
-                <div className="grid md:grid-cols-2 gap-8">
+                <div className="grid md:grid-cols-2 gap-6 md:items-center">
                   {project.image ? (
-                    <div className="relative aspect-square overflow-hidden bg-muted/20 flex items-center justify-center">
+                    <div className="relative aspect-video overflow-hidden bg-muted/20 flex items-center justify-center">
                       <Image
                         src={project.image}
                         alt={project.title}
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
-                        className="object-contain p-4"
+                        className={
+                          project.imageFit === 'cover'
+                            ? `object-cover ${project.imagePosition ?? 'object-top'}`
+                            : 'object-contain p-4'
+                        }
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent pointer-events-none" />
                     </div>
                   ) : (
-                    <div className="relative aspect-video md:aspect-auto overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center">
+                    <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center">
                       <div className="text-center p-8">
                         <div className="text-4xl mb-4">💻</div>
                         <p className="text-muted-foreground text-sm">Project in progress</p>
@@ -109,7 +117,7 @@ export function ProjectsSection() {
                     </div>
                   )}
 
-                  <div className="p-8 flex flex-col justify-between">
+                  <div className="p-6 md:p-8 flex flex-col justify-center">
                     <div className="space-y-4">
                       <div>
                         <h3 className="text-2xl font-bold mb-1">{project.title}</h3>

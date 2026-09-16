@@ -34,9 +34,9 @@ export function ContactSection() {
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I&apos;m currently seeking 4-month co-op opportunities starting Winter 2027 where I can apply my
-                technical expertise in full-stack development, agentic AI systems, and automation
-                to create meaningful impact.
+                Whether you&apos;re hiring for Winter 2027, want to collaborate on a project, or just want to
+                talk shop about full-stack development, agentic AI systems, or automation — I&apos;d love to
+                hear from you. Reach out through any of the channels below.
               </p>
             </div>
 
