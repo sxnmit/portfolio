@@ -10,41 +10,54 @@ import { Github } from 'lucide-react'
 export function ProjectsSection() {
   const projects = [
     {
-      title: 'Chalk',
-      period: 'In Development',
+      title: 'Nexus',
+      subtitle: 'Self-Improving Agentic Assistant',
+      period: 'September 2026 – Present',
       bullets: [
-        'A SaaS solution for pool hall management, featuring secure user authentication, real-time table tracking, and revenue reporting',
-        'Architected a scalable web application using Next.js, TypeScript, Tailwind CSS, and Supabase with a tablet-first UI optimized for in-venue use',
-        'Laying the foundation for a future global pool platform with a full POS system coming soon',
+        'Building an autonomous, self-improving personal assistant agent orchestrated with LangGraph, using the Todoist API for task management and Telegram as the interface',
+        'Architected a FastAPI backend and agent loop that evaluates and iteratively refines its own behaviour from user feedback, deepening hands-on agentic AI system design experience',
       ],
-      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase'],
+      technologies: ['Python', 'LangGraph', 'FastAPI', 'Todoist API', 'Telegram', 'Agentic AI'],
+      image: null,
+      githubUrl: null,
+    },
+    {
+      title: 'Chalk',
+      subtitle: 'Pool Hall Management SaaS',
+      period: 'April 2026 – Present',
+      bullets: [
+        'Building a multi-tenant B2B SaaS from scratch using Next.js, TypeScript, Tailwind CSS, and Supabase Postgres, shipping a working product to a real pilot customer in under a week',
+        'Designed real-time table session tracking (start/stop, live timers, automatic revenue calculation) optimized for tablet-first in-venue use',
+        'Built an owner-facing analytics dashboard with peak-hour analysis and rate-tier breakdowns',
+      ],
+      technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Multi-Tenant SaaS'],
       image: '/projImage3.png',
       githubUrl: null,
     },
     {
       title: 'Signal',
-      period: 'April 2026',
+      subtitle: 'Daily News Automation',
+      period: 'March 2026',
       bullets: [
-        'Automated news digest agent that aggregates tech and world news from NewsAPI and RSS feeds',
-        'Summarizes articles using Groq\'s Llama LLM with AI-powered content filtering and intelligent deduplication',
-        'Engineered full pipeline with custom scraping and professional email rendering via GitHub Actions CI/CD workflows',
+        'Built a background Python agent that scrapes news from NewsAPI, RSS feeds, and the Claude API\'s web search tool',
+        'Delivers a categorized HTML email digest on a configurable schedule',
       ],
-      technologies: ['NewsAPI', 'RSS', 'Groq', 'Llama', 'SQLite', 'GitHub Actions', 'Gmail', 'Python'],
+      technologies: ['Python', 'Claude API', 'NewsAPI', 'RSS', 'Automation'],
       image: '/projImage.png',
       githubUrl: null,
     },
     {
       title: 'Macify',
-      period: 'January - February 2026',
+      subtitle: 'McMaster Navigation Extension',
+      period: 'January 2026',
       bullets: [
-        'Context-aware Chrome extension that improves navigation and clarity across McMaster systems (Mosaic & OSCARplus)',
+        'Building a context-aware Chrome extension providing fast access and guided navigation across McMaster systems (Mosaic and OSCARplus)',
         'Features cross-site shortcuts, assisted navigation, and in-page guidance',
       ],
       technologies: ['Chrome Extension', 'JavaScript', 'React'],
       image: '/projImage2.png',
       githubUrl: null,
     },
-
   ]
 
   return (
@@ -84,7 +97,6 @@ export function ProjectsSection() {
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-contain p-4"
-                        unoptimized
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-card to-transparent pointer-events-none" />
                     </div>
@@ -100,7 +112,10 @@ export function ProjectsSection() {
                   <div className="p-8 flex flex-col justify-between">
                     <div className="space-y-4">
                       <div>
-                        <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
+                        <h3 className="text-2xl font-bold mb-1">{project.title}</h3>
+                        {project.subtitle && (
+                          <p className="text-base text-primary mb-2">{project.subtitle}</p>
+                        )}
                         <p className="text-sm text-muted-foreground">{project.period}</p>
                       </div>
 

@@ -19,7 +19,7 @@ export function ContactSection() {
             Let&apos;s Build <span className="gradient-text">Something Together</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto text-balance">
-            Open to 4-month co-ops starting Fall 2026
+            Open to 4-month co-ops starting Winter 2027
           </p>
         </motion.div>
 
@@ -34,8 +34,8 @@ export function ContactSection() {
             <div className="text-center">
               <h3 className="text-2xl font-bold mb-4">Get In Touch</h3>
               <p className="text-muted-foreground leading-relaxed">
-                I&apos;m currently seeking 4 month co-op opportunities starting Fall 2026 where I can apply my
-                technical expertise in full-stack development, data integration, and automation
+                I&apos;m currently seeking 4-month co-op opportunities starting Winter 2027 where I can apply my
+                technical expertise in full-stack development, agentic AI systems, and automation
                 to create meaningful impact.
               </p>
             </div>
@@ -103,7 +103,7 @@ export function ContactSection() {
           viewport={{ once: true }}
           className="mt-24 pt-8 border-t border-border/50 text-center text-sm text-muted-foreground"
         >
-          <p>© 2025 Sanmit Singh. Built with Next.js, Tailwind CSS, and Framer Motion.</p>
+          <p>© 2026 Sanmit Singh. Built with Next.js, Tailwind CSS, and Framer Motion.</p>
         </motion.div>
       </div>
     </section>

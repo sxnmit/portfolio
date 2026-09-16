@@ -8,29 +8,35 @@ export function SkillsSection() {
   const skillCategories = [
     {
       title: 'Languages',
-      skills: ['Java', 'Python', 'C#', 'C', 'C++', 'JavaScript', 'TypeScript', 'CSS', 'Elm', 'Haskell'],
+      skills: ['Java', 'Python', 'C#', 'C', 'JavaScript', 'TypeScript', 'SQL', 'CSS'],
     },
     {
       title: 'Frameworks & Libraries',
       skills: [
-        'ASP.NET Core',
+        '.NET Core',
         'Node.js',
         'React.js',
         'Next.js',
         'Angular',
         'Django',
-        'Flask',
+        'FastAPI',
+        'Spring Boot',
+        'Flutter',
         'TailwindCSS',
         'Storybook',
       ],
     },
     {
+      title: 'AI & Agentic Systems',
+      skills: ['LangChain', 'LangGraph', 'Agentic AI Systems', 'Retrieval-Augmented Generation (RAG)', 'Anthropic API', 'OpenAI API'],
+    },
+    {
       title: 'Databases',
-      skills: ['PostgreSQL', 'MongoDB', 'Microsoft SQL Server', 'MySQL'],
+      skills: ['PostgreSQL', 'Supabase', 'MongoDB', 'Microsoft SQL Server', 'MySQL'],
     },
     {
       title: 'Tools & Technologies',
-      skills: ['Git', 'GitHub', 'Bitbucket', 'Postman', 'Jira', 'Confluence', 'Visual Studio', 'Copilot', 'Cursor', 'Claude Code', 'PowerBI', 'Adobe Analaytics', 'Microsoft 365'],
+      skills: ['Git', 'GitHub', 'Bitbucket', 'Docker', 'Postman', 'Jira', 'Confluence', 'Visual Studio', 'Cursor', 'Claude Code', 'Conductor', 'PowerBI', 'Microsoft 365'],
     },
   ]
 
