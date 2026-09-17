@@ -15,7 +15,7 @@ export function AboutSection() {
     {
       icon: Briefcase,
       value: '5',
-      label: 'Internships',
+      label: 'Professional Roles',
     },
     {
       icon: TrendingUp,
@@ -53,7 +53,7 @@ export function AboutSection() {
             <div className="aspect-square max-w-md mx-auto relative">
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 rounded-full blur-3xl" />
               <Image
-                src="/my-hero-image.png"
+                src="/my-hero-image.jpg"
                 alt="Sanmit Singh"
                 fill
                 sizes="(max-width: 768px) 100vw, 400px"
@@ -71,8 +71,8 @@ export function AboutSection() {
           >
             <div className="prose prose-invert max-w-none">
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I&apos;m a <span className="text-foreground font-semibold">Honours Computer Science</span> co-op student
-                at McMaster University with a <span className="text-primary font-semibold">3.9 GPA</span>.
+                I&apos;m a 4th-year <span className="text-foreground font-semibold">Honours Computer Science</span> co-op student
+                at McMaster University with a <span className="text-primary font-semibold">3.9 GPA</span>, graduating in April 2028.
                 As a two-time Dean&apos;s List recipient, I bring strong academic excellence combined with hands-on experience across multiple companies and roles.
               </p>
               <br></br>
@@ -83,9 +83,11 @@ export function AboutSection() {
               </p>
               <br></br>
               <p className="text-lg leading-relaxed text-muted-foreground">
-                I&apos;m proficient in <span className="text-primary font-semibold">full-stack development</span>, with expertise in
-                Next.js, React, TypeScript, C#, Python, and cloud technologies. Beyond traditional roles, I&apos;ve built personal projects including
-                a Chrome extension for university navigation, a pool hall management SaaS, and an automated news digest agent—each solving real problems with modern tech stacks.
+                I&apos;m proficient in <span className="text-primary font-semibold">full-stack development</span> and
+                <span className="text-primary font-semibold"> agentic AI systems</span>, with expertise in
+                Next.js, React, TypeScript, C#, Python, LangGraph, and RAG pipelines. Beyond my roles, I&apos;ve built personal projects including
+                a self-improving assistant agent, a multi-tenant pool hall SaaS shipped to a real pilot customer, an automated news digest agent,
+                and a Chrome extension for university navigation—each solving real problems with modern tech stacks.
               </p>
             </div>
 

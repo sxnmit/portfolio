@@ -8,25 +8,37 @@ import { Building2, MapPin, Calendar } from 'lucide-react'
 export function ExperienceSection() {
   const experiences = [
     {
+      company: 'McMaster Engineering Society',
+      role: 'Software Developer',
+      location: 'Hamilton, ON',
+      period: 'Sep 2026 – Present',
+      description: [
+        'Developing a full-stack event ticketing platform for the McMaster Engineering Society, powering registration and ticket sales for events including the Iron Ring Ceremony',
+        'Collaborating with a team of student developers in an Agile workflow to design, build, and ship new platform features',
+      ],
+      technologies: ['TypeScript', 'React.js', 'Node.js', 'PostgreSQL', 'REST API Development', 'Agile Methodologies'],
+      color: 'primary',
+    },
+    {
       company: 'Scotiabank',
       role: 'Software Engineer Intern',
       location: 'Toronto, ON',
       period: 'May 2026 – Sep 2026',
       description: [
-        'Building an elevated onboarding experience for a client-facing platform with a user base in the millions as the only intern staffed on this high-priority initiative',
-        'Led a 6-person intern team building agentic workflows and RAG pipelines with LangGraph to streamline architecture workflows for internal engineering teams using extreme programming (XP) frameworks',
+        'Built an elevated onboarding experience for a client-facing platform with a user base in the millions, as the only intern staffed on this high-priority initiative',
+        'Led a 6-person intern team building agentic workflows and RAG pipelines with LangGraph to streamline architecture workflows for internal engineering teams, using extreme programming (XP) frameworks',
       ],
-      technologies: ['TypeScript', 'Python', 'SQL', 'Node.js', 'React.js', 'LangGraph', 'LangChain', 'Bitbucket', 'Docker', 'Git', 'REST API Development', 'Agile Methodologies'],
+      technologies: ['TypeScript', 'Python', 'SQL', 'Node.js', 'React.js', 'LangGraph', 'LangChain', 'Docker', 'Git', 'Bitbucket', 'REST API Development', 'Agile Methodologies'],
       color: 'accent',
     },
     {
       company: 'Scotiabank',
-      role: 'Product Manager Intern',
+      role: 'Product Management Intern',
       location: 'Toronto, ON',
       period: 'Jan 2026 – Apr 2026',
       description: [
-        'Leading end-to-end UX improvements across Two-Step Verification (2SV) authentication flows to reduce friction while maintaining security and compliance standards',
-        'Partnering cross-functionally with Design, Engineering, Risk, and Compliance to translate user pain points into feasible product solutions, navigating legacy system constraints and high-risk identity surfaces',
+        'Led end-to-end UX improvements across Two-Step Verification (2SV) authentication flows to reduce friction while maintaining security and compliance standards',
+        'Partnered cross-functionally with Design, Engineering, Risk, and Compliance to translate user pain points into feasible product solutions, navigating legacy system constraints and high-risk identity surfaces',
       ],
       technologies: ['UX Strategy', 'Funnel Analysis', 'Data-Driven Decision Making', 'Cross-Functional Collaboration', 'Stakeholder Communication'],
       color: 'accent',
@@ -40,9 +52,9 @@ export function ExperienceSection() {
         'Developed an end-to-end Excel automation full-stack web application using ReactJS and C#, enabling teams to drag-and-drop inputs and automatically generate client-ready deliverables, streamlining tasks by 90%',
         'Built and documented 5+ reusable React components using Storybook, improving UI development efficiency by over 25% and cutting new developer onboarding time by 2+ hours per project',
         'Built an API integration application to retrieve 10,000+ client feedback comments from Autodesk Construction Cloud and developed a PowerBI dashboard with scheduled refreshes, enhancing real-time visibility across 20+ active projects',
-        'Collaborating cross-functionally with engineers, project managers, and stakeholders to gather requirements and translate business needs into technical deliverables',
+        'Collaborated cross-functionally with engineers, project managers, and stakeholders to gather requirements and translate business needs into technical deliverables',
       ],
-      technologies: ['JavaScript', 'TypeScript', 'C#', 'Python', 'SQL', 'Node.js', 'React.js', 'ASP.NET', 'Automated Testing', 'REST APIs', 'Full-Stack Development', 'System Design'],
+      technologies: ['JavaScript', 'TypeScript', 'C#', 'Python', 'SQL', 'Node.js', 'React.js', 'ASP.NET', 'PowerBI', 'Storybook', 'Automated Testing', 'REST APIs', 'System Design'],
       color: 'primary',
     },
     {
@@ -51,11 +63,11 @@ export function ExperienceSection() {
       location: 'Remote',
       period: 'Aug 2024 – Dec 2024',
       description: [
-        'Refactored client AI knowledge base updates on the InsightAI platform by developing a RAG retrieval application that processes conversational data, reducing manual update effort by 70%',
+        'Refactored client AI knowledge base updates on the InsightAI platform by developing a RAG application that processes conversational data, reducing manual update effort by 70%',
         'Integrated OpenAI\'s API to convert raw text (up to 500,000 characters) into structured JSON data for optimized data organization and accessibility',
         'Implemented test-driven development with pytest, ensuring robust API functionality, data validation, and seamless file processing for multi-format inputs',
       ],
-      technologies: ['Python', 'OpenAI API', 'RAG', 'pytest', 'Flask'],
+      technologies: ['Python', 'JavaScript', 'React.js', 'Node.js', 'Django', 'OpenAI API', 'RAG', 'pytest'],
       color: 'secondary',
     },
   ]

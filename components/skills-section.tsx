@@ -13,26 +13,30 @@ export function SkillsSection() {
     {
       title: 'Frameworks & Libraries',
       skills: [
-        'ASP.NET Core',
+        '.NET Core',
         'Node.js',
         'React.js',
         'Next.js',
         'Angular',
         'Django',
+        'FastAPI',
         'Spring Boot',
         'Flutter',
-        'Flask',
         'TailwindCSS',
         'Storybook',
       ],
     },
     {
+      title: 'AI & Agentic Systems',
+      skills: ['LangChain', 'LangGraph', 'Agentic AI Systems', 'Retrieval-Augmented Generation (RAG)', 'Anthropic API', 'OpenAI API'],
+    },
+    {
       title: 'Databases',
-      skills: ['PostgreSQL', 'MongoDB', 'MySQL'],
+      skills: ['PostgreSQL', 'Supabase', 'MongoDB', 'Microsoft SQL Server', 'MySQL'],
     },
     {
       title: 'Tools & Technologies',
-      skills: ['Git', 'GitHub', 'Bitbucket', 'Postman', 'Jira', 'Confluence', 'Visual Studio', 'Copilot', 'Cursor', 'Claude Code', 'Conductor', 'Docker', 'LangChain', 'LangGraph', 'PowerBI', 'Adobe Analaytics', 'MS Office'],
+      skills: ['Git', 'GitHub', 'Bitbucket', 'Docker', 'Postman', 'Jira', 'Confluence', 'Visual Studio', 'Cursor', 'Claude Code', 'Conductor', 'PowerBI', 'MS Office'],
     },
   ]
 
