@@ -5,10 +5,24 @@ import { motion } from 'framer-motion'
 import { Card } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-import { Github } from 'lucide-react'
+import { Github, ExternalLink } from 'lucide-react'
 
 export function ProjectsSection() {
   const projects = [
+    {
+      title: 'The Vault',
+      subtitle: 'Walkable 3D Interactive Resume',
+      period: 'September 2026 – Present',
+      bullets: [
+        'Built a walkable 3D world in the browser with React Three Fiber and Rapier physics, where five sealed chambers each hold a puzzle and each solved puzzle unseals one chapter of my resume',
+        'Modelled every chamber on a real role — Scotiabank, Chalk, Tetra Tech, InsightAI, McMaster — with the door order enforcing the story, plus a keyboard/mouse control scheme and touch controls for mobile',
+        'Generated the character, rooms, signage, and sound effects entirely in code with no downloaded assets, and persisted progress to localStorage',
+      ],
+      technologies: ['React Three Fiber', 'Three.js', 'Rapier', 'Zustand', 'TypeScript', 'WebGL'],
+      image: null,
+      githubUrl: 'https://github.com/sxnmit/escape-room-portfolio',
+      liveUrl: 'https://escape-room-portfolio.vercel.app',
+    },
     {
       title: 'Nexus',
       subtitle: 'Self-Improving Agentic Assistant',
@@ -19,7 +33,8 @@ export function ProjectsSection() {
       ],
       technologies: ['Python', 'LangGraph', 'FastAPI', 'Todoist API', 'Telegram', 'Agentic AI'],
       image: null,
-      githubUrl: null,
+      githubUrl: 'https://github.com/sxnmit/nexus',
+      liveUrl: null,
     },
     {
       title: 'Chalk',
@@ -33,7 +48,8 @@ export function ProjectsSection() {
       technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Supabase', 'PostgreSQL', 'Multi-Tenant SaaS'],
       image: '/projImage3.png',
       imageFit: 'contain',
-      githubUrl: null,
+      githubUrl: 'https://github.com/sxnmit/chalk',
+      liveUrl: 'https://chalk-psi.vercel.app',
     },
     {
       title: 'Signal',
@@ -46,7 +62,8 @@ export function ProjectsSection() {
       technologies: ['Python', 'Claude API', 'NewsAPI', 'RSS', 'Automation'],
       image: '/projImage.png',
       imageFit: 'cover',
-      githubUrl: null,
+      githubUrl: 'https://github.com/sxnmit/signal',
+      liveUrl: null,
     },
     {
       title: 'Macify',
@@ -56,11 +73,12 @@ export function ProjectsSection() {
         'Building a context-aware Chrome extension that delivers fast, guided navigation across McMaster\'s core systems (Mosaic & OSCARplus)',
         'Designed cross-site shortcuts and in-page guidance to cut down navigation friction on legacy, state-driven university platforms',
       ],
-      technologies: ['Chrome Extension', 'JavaScript', 'React'],
+      technologies: ['Chrome Extension', 'JavaScript', 'CSS', 'HTML'],
       image: '/projImage2.png',
       imageFit: 'cover',
       imagePosition: 'object-[center_25%]',
-      githubUrl: null,
+      githubUrl: 'https://github.com/sxnmit/macify',
+      liveUrl: null,
     },
   ]
 
@@ -111,8 +129,10 @@ export function ProjectsSection() {
                   ) : (
                     <div className="relative aspect-video overflow-hidden bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 flex items-center justify-center">
                       <div className="text-center p-8">
-                        <div className="text-4xl mb-4">💻</div>
-                        <p className="text-muted-foreground text-sm">Project in progress</p>
+                        <div className="text-4xl mb-4">{project.liveUrl ? '🎮' : '💻'}</div>
+                        <p className="text-muted-foreground text-sm">
+                          {project.liveUrl ? 'Playable in your browser' : 'Project in progress'}
+                        </p>
                       </div>
                     </div>
                   )}
@@ -145,19 +165,29 @@ export function ProjectsSection() {
                       </div>
                     </div>
 
-                    {project.githubUrl && (
-                      <div className="flex gap-4 pt-6">
-                        <Button
-                          variant="outline"
-                          size="sm"
-                          className="glass"
-                          asChild
-                        >
-                          <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                            <Github className="w-4 h-4 mr-2" />
-                            Code
-                          </a>
-                        </Button>
+                    {(project.githubUrl || project.liveUrl) && (
+                      <div className="flex flex-wrap gap-3 pt-6">
+                        {project.liveUrl && (
+                          <Button size="sm" className="glow-purple" asChild>
+                            <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                              <ExternalLink className="w-4 h-4 mr-2" />
+                              Live Demo
+                            </a>
+                          </Button>
+                        )}
+                        {project.githubUrl && (
+                          <Button
+                            variant="outline"
+                            size="sm"
+                            className="glass"
+                            asChild
+                          >
+                            <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                              <Github className="w-4 h-4 mr-2" />
+                              Code
+                            </a>
+                          </Button>
+                        )}
                       </div>
                     )}
                   </div>
